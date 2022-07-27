@@ -1,21 +1,54 @@
-// @font-face {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-family: "Rouble";
-
-//   font-display: swap;
-//   src:
-//     url("../fonts/rouble.woff2") format("woff2"),
-//     url("../fonts/rouble.woff") format("woff");
-// }
-
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
+  font-family: "Noto Sans";
 
   font-display: swap;
   src:
-    url("../fonts/.woff2") format("woff2"),
-    url("../fonts/.woff") format("woff");
+    url("../fonts/notosans.woff2") format("woff2"),
+    url("../fonts/notosans.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Noto Sans";
+
+  font-display: swap;
+  src:
+    url("../fonts/notosansbold.woff2") format("woff2"),
+    url("../fonts/notosansbold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Montserrat";
+
+  font-display: swap;
+  src:
+    url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Montserrat";
+
+  font-display: swap;
+  src:
+    url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Roboto";
+
+  font-display: swap;
+  src:
+    url("../fonts/Robotomedium.woff2") format("woff2"),
+    url("../fonts/Robotomedium.woff") format("woff");
 }
