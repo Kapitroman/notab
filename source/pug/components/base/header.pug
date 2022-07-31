@@ -1,4 +1,4 @@
-mixin header(headerMods, currentUrl)
+//-mixin header(headerMods, currentUrl)
   -
     const headerLinks = [
       {
@@ -34,3 +34,7 @@ mixin header(headerMods, currentUrl)
                   span.main-nav__link.is-active=link.text
                 else
                   a.main-nav__link(href=link.href)=link.text
+
+mixin header(headerMods)
+  header.header(class=headerMods)
+    .container

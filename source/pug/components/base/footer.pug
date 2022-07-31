@@ -1,3 +1,16 @@
 mixin footer(footerMods)
   footer.footer(class=footerMods)
     .container
+      .footer__wrap
+        .footer__highlight
+        .footer__content
+          .footer__contacts-info
+            .footer__logo
+              +img("content", "logo-footer", "png", 81, 16, "лого")
+            p.footer__contact
+              span Contact us:
+              a(href= "mailto:support@notab.com") support@notab.com
+            p.footer__copywriter © 2020 - NoTab®
+          .footer__addition-info
+            a(href= "#") Terms to use
+            a(href= "#") Privacy policy
