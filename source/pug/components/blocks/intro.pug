@@ -1,5 +1,5 @@
 mixin intro()
-  .intro
+  section.intro
     //- вставлять блоки во внешний контейнер неверно
     //- все блоки содержат в себе container без доп класса tutorial__wrapper
     //-.container
@@ -12,3 +12,48 @@ mixin intro()
         +img("content", "placeholder", "png", 120, 120, "Пример")
         +img("content", "placeholder", "png", 120, 120, "Пример")
         +img("content", "placeholder", "png", 120, 120, "Пример")
+    .container
+      .intro__wrap
+        .intro__text-block
+          .intro__title
+            span A platform
+            | that works smarter
+          .intro__subtitle-block
+            .intro__small-highlight
+            .intro__slash
+            .intro__subtitle
+               span  NoTab allows bars & nightclubs
+               | to manage, understand, and grow their business from a single dashboard
+        .intro__img-block
+          .intro__image-shadow
+          //-.intro__big-highlight
+          .intro__big-highlight
+            //-svg(id="mask" width="663" height="783" viewBox="0 0 663 783" fill="none" xmlns="http://www.w3.org/2000/svg")
+              defs
+                  //-mask(id="mask")
+                  path(d="M195.668 404.979C360.112 356.449 439.839 132.691 459.146 26.8779C542.499 -41.2634 555.92 26.8779 639.272 155.682C722.625 284.485 594.064 503.036 555.92 639.318C517.776 775.601 195.668 812.996 73.4645 759.812C-48.7387 706.629 -9.88795 465.641 195.668 404.979Z" fill="#000000" fill-opacity="0.2" shape-rendering="crispEdges")
+            //-div.intro__big-highlight-fon
+          .intro__image
+            +img("content", "iphone-intro", "png", 333, 668, "iphone-intro")
+      .intro__download
+        .intro__download-slogan DOWNLOAD OUR APP
+        //-.intro__download-apps
+          .intro__app-store
+            +img("content", "app-store", "png", 136, 32, "app store")
+          .intro__google-play
+            +img("content", "google-play", "png", 158, 35, "google play")
+        //-.apps.apps--big
+          .apps__item.apps__item--app-store
+            +img("content", "app-store", "png", 136, 32, "app store")
+          .apps__item
+            +img("content", "google-play", "png", 158, 33, "google play")
+        .apps.apps--small
+          .apps__item.apps__item--app-store
+            +img("content", "app-store", "png", 136, 32, "app store")
+          .apps__item
+            +img("content", "google-play", "png", 158, 33, "google play")
+
+  //-svg(width="991" height="828" viewBox="0 0 991 828" fill="none" xmlns="http://www.w3.org/2000/svg")
+    defs
+      mask(id="mask")
+       path(d="M726.689 447.055C636.6 301.175 399.748 283.135 292.584 292.35C204.911 229.864 267.12 198.986 369.452 84.6792C471.785 -29.6278 716.462 36.8959 857.979 37.8365C999.495 38.777 1120.33 339.695 1101.17 471.585C1082.02 603.476 839.301 629.405 726.689 447.055Z" fill="#FA00FF" fill-opacity="0.2")

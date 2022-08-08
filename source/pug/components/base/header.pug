@@ -38,3 +38,10 @@
 mixin header(headerMods)
   header.header(class=headerMods)
     .container
+      nav.main-nav
+        .main-nav__logo
+          +img("content", "logo", "png", 107, 109, "logo-image")
+          +img("content", "logo-header", "png", 96, 25, "logo-string")
+        a.main-nav__login(href="#")
+          +icon("icon-login", 26, 25)
+          span Login

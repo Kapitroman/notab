@@ -1,3 +1,4 @@
+/*
 .header {
   padding: 28px 0;
 
@@ -9,5 +10,14 @@
 
   &__logo {
     color: $color-default-white;
+  }
+}
+*/
+
+.header {
+  padding: 23px 0 18px 0;
+
+  @include vp-767 {
+    padding: 40px 0 65px 0;
   }
 }
