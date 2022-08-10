@@ -1,0 +1,13 @@
+.heading {
+  margin: 0;
+
+  font-family: $ff--montserrat;
+  font-size: 51px;
+  font-weight: 700;
+  line-height: 62px;
+
+  @include vp-1023 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
