@@ -12,6 +12,8 @@
       flex-direction: column;
 
       max-width: 345px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -51,18 +53,10 @@
 
     max-width: 358px;
     margin-bottom: 23px;
-
-    @include vp-767 {
-
-    }
   }
 
   &__text {
     max-width: 315px;
-
-    @include vp-767 {
-
-    }
   }
 
   &__highlight {
