@@ -761,6 +761,11 @@ button,
   margin-left: -15px;
 }
 
+.main-nav__logo img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .main-nav__logo :first-child {
   width: 107px;
   height: 109px;
@@ -841,6 +846,8 @@ button,
 .footer__logo img {
   width: 81px;
   height: 16px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .footer__contact {
@@ -1509,6 +1516,8 @@ button,
 .apps .apps__item img {
   width: 250px;
   height: 52px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .apps .apps__item--app-store {
@@ -1735,24 +1744,45 @@ button,
 }
 
 .our-mission {
-  padding: 123px 0 142px 0;
+  padding: 123px 0 129px 0;
 }
 
 .our-mission__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .our-mission__image {
-  margin-left: -348px;
-  margin-bottom: -14px;
+  position: relative;
+  width: 80.65%;
+  margin-left: -28.06%;
+  margin-bottom: auto;
+}
+
+.our-mission__image::before {
+  content: "";
+  display: table;
+  padding-bottom: calc(100% / (1000 / 513));
+}
+
+.our-mission__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .our-mission__text-content {
   position: relative;
-  width: 589px;
-  margin-left: 168px;
+  width: 33.95%;
+  margin-left: 13.55%;
 }
 
 .our-mission__title {
@@ -1772,7 +1802,7 @@ button,
   left: 197px;
   width: 85px;
   height: 85px;
-  background-color: #F101BF;
+  background-color: #f101bf;
   opacity: 0.7;
   -webkit-filter: blur(40px);
   filter: blur(40px);
@@ -2251,6 +2281,9 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     max-width: 345px;
     margin-left: auto;
     margin-right: auto;
@@ -2268,6 +2301,10 @@ button,
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
+  }
+
+  .our-mission__image::before {
+    display: none;
   }
 
   .our-mission__text-content {

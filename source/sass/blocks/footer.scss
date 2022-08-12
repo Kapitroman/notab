@@ -74,6 +74,7 @@
     img {
       width: 81px;
       height: 16px;
+      object-fit: cover;
 
       @include vp-767 {
         width: 71px;
