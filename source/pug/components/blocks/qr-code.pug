@@ -1,0 +1,30 @@
+mixin qr-code()
+  section.qr-code
+    .qr-code__wrap
+      .qr-code__fon-image-block-1
+        .qr-code__fon-image-1
+          +picture("content", "dj", "jpg", 811, 606, "dj")
+        .qr-code__fon
+      .qr-code__fon-image-block-2
+        .qr-code__fon-image-2
+          +picture("content", "cocktail", "jpg", 733, 617, "cocktail")
+          .qr-code__img-slogan
+            +picture("content", "nightlife", "png", 139, 55, "string 'nightlife'")
+      .qr-code__main-content
+        .qr-code__info-content
+          .qr-code__text-content
+            h2.qr-code__title.heading QR code
+            p.qr-code__text.text
+              | No more conflict situations due to wrong order. The guest selects the positions,
+              | and after that an individual QR code of his order is generated
+          .apps.apps--small
+            a(href="#").apps__item.apps__item--app-store
+              +picture("content", "app-store", "png", 136, 32, "app store")
+            a(href="#").apps__item
+              +picture("content", "google-play", "png", 158, 33, "google play")
+        .qr-code__image-content
+          .qr-code__image.qr-code__image--left
+            +picture("content", "iphone-order", "jpg", 333, 668, "iphone-order")
+          .qr-code__image.qr-code__image--right
+            +picture("content", "iphone-order-2", "jpg", 333, 668, "iphone-order")
+

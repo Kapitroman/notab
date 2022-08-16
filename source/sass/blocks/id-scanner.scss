@@ -122,6 +122,7 @@
     position: relative;
 
     display: flex;
+    align-items: flex-start;
     gap: 49px;
 
     width: 57.66%;
@@ -151,7 +152,7 @@
       content: "";
       display: table;
 
-      padding-bottom: calc(100% / (333 / 667));
+      padding-bottom: calc(100% / (333 / 668));
 
       @include vp-767 {
         display: none;
@@ -201,10 +202,6 @@
       margin-top: 0;
       margin-bottom: 70px;
     }
-  }
-
-  &__title {
-    margin-bottom: 23px;
   }
 
   &__text {
