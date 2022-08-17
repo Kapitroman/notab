@@ -1,0 +1,17 @@
+mixin generate-code()
+  section.generate-code
+    .generate-code__wrap
+      .generate-code__fon-text
+        img(src="img/svg/notab.svg" width="1939", height="495" alt="string notab")
+      .container
+        .generate-code__content-block
+          .generate-code__image-block
+            .generate-code__highlight
+            +picture("content", "ipone-generate-code", "png", 333, 668, "ipone generate code")
+            .generate-code__scan-code
+              +icon("icon-arrow", 81, 70)
+              p Scan QR-code
+          .generate-code__text-content
+            h2.generate-code__title.heading Generate&nbsp;your QR&nbsp;-&nbsp;code
+            p.generate-code__text.text
+              | The guest QR code is scanned by&nbsp;the staff and automatically sent
