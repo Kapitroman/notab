@@ -19,14 +19,12 @@
 
     width: 134.65%;
     margin-left: -17.36%;
-    //margin-top: 7.5%;
     margin-top: calc(108px + 100vw / 1440);
     margin-bottom: auto;
 
     @include vp-767 {
       width: 127.73%;
       margin-left: -13.87%;
-      //margin-top: 292px;
       margin-top: calc(292px - 100vw / 375);
     }
 
@@ -104,11 +102,10 @@
     height: 962px;
     border-radius: 50%;
 
-    background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+    background: linear-gradient(12.08deg, $color-shocking-pink 2.82%, $color-navy-blue 97.06%);
     opacity: 0.15;
 
     filter: blur(312px);
-
 
     @include vp-767 {
       left: -62px;
@@ -215,9 +212,5 @@
 
   &__text {
     max-width: 293px;
-
-    @include vp-767 {
-
-    }
   }
 }

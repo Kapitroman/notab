@@ -2226,8 +2226,8 @@ button,
   width: 1031px;
   height: 962px;
   border-radius: 50%;
-  background: -o-linear-gradient(77.92deg, #F101BF 2.82%, #0066FF 97.06%);
-  background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+  background: -o-linear-gradient(77.92deg, #f101bf 2.82%, #0066ff 97.06%);
+  background: linear-gradient(12.08deg, #f101bf 2.82%, #0066ff 97.06%);
   opacity: 0.15;
   -webkit-filter: blur(312px);
   filter: blur(312px);
@@ -2282,6 +2282,106 @@ button,
 
 .generate-code__text {
   max-width: 293px;
+}
+
+.easier-ordering {
+  padding: 96px 0 0 0;
+}
+
+.easier-ordering__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.easier-ordering__text-content {
+  width: 421px;
+  margin-right: 60px;
+  margin-left: auto;
+}
+
+.easier-ordering__image-block {
+  position: relative;
+  width: 70%;
+  margin-left: 17.02%;
+}
+
+.easier-ordering__image-block::before {
+  content: "";
+  display: table;
+  padding-bottom: 119.7%;
+}
+
+.easier-ordering__image-block img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.easier-ordering__image-block p {
+  position: absolute;
+  margin: 0;
+  padding: 21px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 27px;
+  background-color: #000000;
+}
+
+.easier-ordering__image-block p:nth-of-type(1) {
+  top: 19.65%;
+  left: 54.72%;
+  width: 270px;
+}
+
+.easier-ordering__image-block p:nth-of-type(2) {
+  top: 34.59%;
+  left: -2.76%;
+  width: 285px;
+}
+
+.easier-ordering__image-block p:nth-of-type(3) {
+  top: 61.56%;
+  left: 80.1%;
+  width: 185px;
+}
+
+.easier-ordering__image-block p:nth-of-type(4) {
+  top: 70.32%;
+  left: 22.81%;
+  width: 176px;
+}
+
+.easier-ordering__highlight {
+  position: absolute;
+  right: -41.13%;
+  top: 0.77%;
+  width: 33.06%;
+  background: -o-linear-gradient(77.92deg, #f101bf 2.82%, #0066ff 97.06%);
+  background: linear-gradient(12.08deg, #f101bf 2.82%, #0066ff 97.06%);
+  opacity: 0.2;
+  -webkit-filter: blur(250px);
+  filter: blur(250px);
+  -webkit-transform: rotate(5.78deg);
+  -ms-transform: rotate(5.78deg);
+  transform: rotate(5.78deg);
+}
+
+.easier-ordering__highlight::before {
+  content: "";
+  display: table;
+  padding-bottom: 93.03%;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -2429,6 +2529,34 @@ button,
   .generate-code__title {
     margin-bottom: 0;
     margin-right: 30px;
+  }
+
+  .easier-ordering__text-content {
+    width: 198px;
+    margin-right: 20px;
+  }
+
+  .easier-ordering__image-block p {
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .easier-ordering__image-block p:nth-of-type(1) {
+    width: 168px;
+  }
+
+  .easier-ordering__image-block p:nth-of-type(2) {
+    width: 171px;
+  }
+
+  .easier-ordering__image-block p:nth-of-type(3) {
+    width: 122px;
+  }
+
+  .easier-ordering__image-block p:nth-of-type(4) {
+    width: 107px;
   }
 }
 
@@ -3068,5 +3196,71 @@ button,
   .generate-code__title {
     margin-right: 0;
     margin-bottom: 24px;
+  }
+
+  .easier-ordering {
+    padding: 58px 0 74px 0;
+  }
+
+  .easier-ordering__text-content {
+    width: 100%;
+    max-width: 345px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 145px;
+  }
+
+  .easier-ordering__title {
+    width: 198px;
+  }
+
+  .easier-ordering__image-block {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transform: translateX(-22px);
+    -ms-transform: translateX(-22px);
+    transform: translateX(-22px);
+  }
+
+  .easier-ordering__image-block::before {
+    display: none;
+  }
+
+  .easier-ordering__image-block img {
+    position: relative;
+    width: 360px;
+    height: 430px;
+  }
+
+  .easier-ordering__image-block p:nth-of-type(1) {
+    top: -70px;
+    left: 46px;
+  }
+
+  .easier-ordering__image-block p:nth-of-type(2) {
+    top: 19px;
+    left: 196px;
+  }
+
+  .easier-ordering__image-block p:nth-of-type(3) {
+    top: 424px;
+    left: 245px;
+  }
+
+  .easier-ordering__image-block p:nth-of-type(4) {
+    top: 341px;
+    left: 37px;
+  }
+
+  .easier-ordering__highlight {
+    right: -182px;
+    top: -96px;
+    width: 287px;
+    height: 267px;
+  }
+
+  .easier-ordering__highlight::before {
+    display: none;
   }
 }
