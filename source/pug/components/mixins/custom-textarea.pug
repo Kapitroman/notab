@@ -7,11 +7,12 @@ mixin custom-textarea(options = {})
   - const inputValue = options.inputValue ? options.inputValue : false
   - const inputMinLength = options.inputMinLength ? options.inputMinLength : false
   - const inputMaxLength = options.inputMaxLength ? options.inputMaxLength : false
+  - const inputAriaLabel = options.inputAriaLabel ? options.inputAriaLabel : false
 
   .custom-textarea&attributes(attributes)
     label
       if inputLabel
         span.custom-textarea__label!=inputLabel
-      textarea(id=inputId, name=inputName, value=inputValue, minlength=inputMinLength, maxlength=inputMaxLength, placeholder=inputPlaceholder)
+      textarea(id=inputId, name=inputName, value=inputValue, minlength=inputMinLength, maxlength=inputMaxLength, placeholder=inputPlaceholder, aria-label=inputAriaLabel)
     if inputError
       .custom-textarea__error!=inputError

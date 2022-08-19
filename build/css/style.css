@@ -999,8 +999,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 500px;
-  padding: 20px 0;
+  width: 100%;
+  padding: 0;
   /*&.is-valid {
     input {
       border: 2px solid $color-malachite;
@@ -1031,29 +1031,76 @@ button,
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  min-height: 40px;
-  margin-left: 30px;
-  padding: 10px;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  padding: 27px 21px;
+  border: 2px solid #5c5c5c;
+  border-radius: 10px;
   outline: none;
   -webkit-transition: border 0.3s ease;
   -o-transition: border 0.3s ease;
   transition: border 0.3s ease;
+  font-family: "Noto Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.custom-input label input::-webkit-input-placeholder,
+.custom-input label textarea::-webkit-input-placeholder,
+.custom-textarea label input::-webkit-input-placeholder,
+.custom-textarea label textarea::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+.custom-input label input::-moz-placeholder,
+.custom-input label textarea::-moz-placeholder,
+.custom-textarea label input::-moz-placeholder,
+.custom-textarea label textarea::-moz-placeholder {
+  color: #bfbfbf;
+}
+
+.custom-input label input:-ms-input-placeholder,
+.custom-input label textarea:-ms-input-placeholder,
+.custom-textarea label input:-ms-input-placeholder,
+.custom-textarea label textarea:-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+.custom-input label input::-ms-input-placeholder,
+.custom-input label textarea::-ms-input-placeholder,
+.custom-textarea label input::-ms-input-placeholder,
+.custom-textarea label textarea::-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+.custom-input label input::placeholder,
+.custom-input label textarea::placeholder,
+.custom-textarea label input::placeholder,
+.custom-textarea label textarea::placeholder {
+  color: #bfbfbf;
 }
 
 .custom-input label input:hover,
 .custom-input label textarea:hover,
 .custom-textarea label input:hover,
 .custom-textarea label textarea:hover {
-  border: 2px solid rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(92, 92, 92, 0.5);
 }
 
 .custom-input label input:focus,
 .custom-input label textarea:focus,
 .custom-textarea label input:focus,
 .custom-textarea label textarea:focus {
-  border: 2px solid rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(92, 92, 92, 0.8);
+}
+
+.custom-input label input,
+.custom-textarea label input {
+  height: 83px;
+}
+
+.custom-input label textarea,
+.custom-textarea label textarea {
+  height: 199px;
 }
 
 .custom-input__error,
@@ -1061,7 +1108,7 @@ button,
   position: absolute;
   right: 0;
   bottom: -5px;
-  color: #ff1553;
+  color: #ff0000;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
@@ -1070,19 +1117,25 @@ button,
 
 .custom-input.is-invalid input,
 .custom-textarea.is-invalid input {
-  border: 2px solid #ff1553;
+  border: 2px solid #ff0000;
 }
 
 .custom-input.is-invalid input:focus,
 .custom-input.is-invalid input:hover,
 .custom-textarea.is-invalid input:focus,
 .custom-textarea.is-invalid input:hover {
-  border: 2px solid rgba(255, 21, 83, 0.5);
+  border: 2px solid rgba(255, 0, 0, 0.5);
 }
 
 .custom-input.is-invalid .custom-input__error,
 .custom-textarea.is-invalid .custom-input__error {
   opacity: 1;
+}
+
+.custom-input--span,
+.custom-textarea--span {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
 }
 
 .custom-toggle {
@@ -1488,8 +1541,8 @@ button,
 }
 
 .apps .apps__item img {
-  width: 250px;
-  height: 52px;
+  width: 251px;
+  height: 55px;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -1511,8 +1564,8 @@ button,
 }
 
 .apps--small .apps__item img {
-  width: 158px;
-  height: 34px;
+  width: 160px;
+  height: 36px;
 }
 
 .apps--small .apps__item--app-store {
@@ -2444,6 +2497,147 @@ button,
   padding-bottom: 49.94%;
 }
 
+.get-in-touch {
+  margin-top: -2.78%;
+  padding: 0;
+}
+
+.get-in-touch__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.get-in-touch__text-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 82px;
+}
+
+.get-in-touch__highlight {
+  position: absolute;
+  left: -86px;
+  bottom: -51px;
+  z-index: 1;
+  width: 247px;
+  height: 250px;
+  background: -o-linear-gradient(77.92deg, #f101bf 2.82%, #0066ff 97.06%);
+  background: linear-gradient(12.08deg, #f101bf 2.82%, #0066ff 97.06%);
+  opacity: 0.3;
+  -webkit-filter: blur(250px);
+  filter: blur(250px);
+  -webkit-transform: rotate(5.78deg);
+  -ms-transform: rotate(5.78deg);
+  transform: rotate(5.78deg);
+}
+
+.get-in-touch__highlight--bottom {
+  left: auto;
+  right: -419px;
+  bottom: -29px;
+  z-index: 1;
+  width: 337px;
+  height: 341px;
+}
+
+.get-in-touch__title {
+  position: relative;
+  z-index: 2;
+}
+
+.get-in-touch__text {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 580px;
+  text-align: center;
+}
+
+.get-in-touch__text span {
+  display: block;
+}
+
+.get-in-touch__form {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 818px;
+  margin-bottom: 91px;
+}
+
+.get-in-touch__form-fields {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  grid-auto-flow: dense;
+  gap: 23px;
+  margin-bottom: 60px;
+}
+
+.get-in-touch__form-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.get-in-touch__form-button button {
+  width: 100%;
+  max-width: 398px;
+  min-height: 80px;
+  margin: 0 auto;
+  padding: 25px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  color: #ffffff;
+}
+
+.get-in-touch__download-apps {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.get-in-touch__download-slogan {
+  margin-bottom: 33px;
+  font-family: "Noto Sans", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -2512,6 +2706,25 @@ button,
 }
 
 @media (max-width: 1023px) {
+  .custom-input label input,
+  .custom-input label textarea,
+  .custom-textarea label input,
+  .custom-textarea label textarea {
+    padding: 16px 9px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .custom-input label input,
+  .custom-textarea label input {
+    height: 57px;
+  }
+
+  .custom-input label textarea,
+  .custom-textarea label textarea {
+    height: 140px;
+  }
+
   .text {
     font-size: 16px;
     line-height: 22px;
@@ -2745,6 +2958,12 @@ button,
     width: 100%;
   }
 
+  .custom-input--span,
+  .custom-textarea--span {
+    -ms-grid-column-span: 1;
+    grid-column: span 1;
+  }
+
   .apps {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2758,8 +2977,8 @@ button,
   }
 
   .apps .apps__item img {
-    width: 158px;
-    height: 34px;
+    width: 160px;
+    height: 36px;
   }
 
   .apps .apps__item--app-store {
@@ -3326,5 +3545,46 @@ button,
 
   .notab {
     display: none;
+  }
+
+  .get-in-touch {
+    margin-top: 0;
+    padding: 73px 0 0 0;
+  }
+
+  .get-in-touch__text-content {
+    margin-bottom: 49px;
+  }
+
+  .get-in-touch__highlight {
+    left: -113px;
+    bottom: -101px;
+  }
+
+  .get-in-touch__highlight--bottom {
+    left: auto;
+    right: -237px;
+    bottom: -226px;
+  }
+
+  .get-in-touch__text span {
+    display: inline;
+  }
+
+  .get-in-touch__form {
+    margin-bottom: 74px;
+  }
+
+  .get-in-touch__form-fields {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .get-in-touch__download-slogan {
+    margin-bottom: 45px;
+    font-size: 24px;
+    line-height: 33px;
   }
 }

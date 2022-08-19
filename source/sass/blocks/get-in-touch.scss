@@ -1,0 +1,165 @@
+.get-in-touch {
+  margin-top: -2.78%;
+  padding: 0;
+
+  @include vp-767 {
+    margin-top: 0;
+    padding: 73px 0 0 0;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__text-content {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 82px;
+
+    @include vp-767 {
+      margin-bottom: 49px;
+    }
+  }
+
+  &__highlight {
+    position: absolute;
+    left: -86px;
+    bottom: -51px;
+    z-index: 1;
+
+    width: 247px;
+    height: 250px;
+
+    background: linear-gradient(12.08deg, $color-shocking-pink 2.82%, $color-navy-blue 97.06%);
+    opacity: 0.3;
+
+    filter: blur(250px);
+    transform: rotate(5.78deg);
+
+    @include vp-767 {
+      left: -113px;
+      bottom: -101px;
+    }
+  }
+
+  &__highlight--bottom {
+    left: auto;
+    right: -419px;
+    bottom: -29px;
+    z-index: 1;
+
+    width: 337px;
+    height: 341px;
+
+    @include vp-767 {
+      left: auto;
+      right: -237px;
+      bottom: -226px;
+    }
+  }
+
+  &__title {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 580px;
+    text-align: center;
+
+    span {
+      display: block;
+
+      @include vp-767 {
+        display: inline;
+      }
+    }
+  }
+
+  &__form {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 818px;
+    margin-bottom: 91px;
+
+    @include vp-767 {
+      margin-bottom: 74px;
+    }
+  }
+
+  &__form-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-flow: dense;
+    gap: 23px;
+
+    margin-bottom: 60px;
+
+    @include vp-767 {
+      grid-template-columns: 1fr;
+      gap: 16px;
+
+      margin-bottom: 40px;
+    }
+  }
+
+  &__form-button {
+    display: flex;
+
+    button {
+      width: 100%;
+      max-width: 398px;
+      min-height: 80px;
+      margin: 0 auto;
+      padding: 25px;
+      border: 1px solid $color-default-white;
+      border-radius: 10px;
+
+      background-color: $color-transparent;
+
+      font-family: $ff--montserrat;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 29px;
+      color: $color-default-white;
+    }
+  }
+
+  &__download-apps {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__download-slogan {
+    margin-bottom: 33px;
+
+    font-family: $ff--notosans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+
+    @include vp-767 {
+      margin-bottom: 45px;
+
+      font-size: 24px;
+      line-height: 33px;
+    }
+  }
+}
