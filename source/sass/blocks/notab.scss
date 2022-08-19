@@ -1,0 +1,64 @@
+.notab {
+  margin-top: -70px;
+
+  @include vp-767 {
+    display: none;
+  }
+
+  &__wrap {
+    display: grid;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+
+  &__fon-string-block,
+  &__image-block {
+    grid-area: 1/-1;
+
+    position: relative;
+  }
+
+  &__fon-string-block {
+    width: 145.76%;
+    margin-left: -21.53%;
+
+    &::before {
+      content: "";
+      display: table;
+
+      padding-bottom: 52.69%;
+    }
+  }
+
+  &__fon {
+    position: absolute;
+    top: 4.61%;
+    bottom: 4.61%;
+    left: 0;
+    right: 0;
+
+    background: linear-gradient(360deg, $color-default-black 6.8%, rgba($color-default-black, 0) 51.62%, $color-default-black 97.38%);
+  }
+
+  &__image-block {
+    width: 59.65%;
+    margin: auto;
+    margin-top: 26.32%;
+
+    &::before {
+      content: "";
+      display: table;
+
+      padding-bottom: 49.94%;
+    }
+  }
+}
