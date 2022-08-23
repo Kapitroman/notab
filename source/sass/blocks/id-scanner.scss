@@ -6,7 +6,7 @@
   }
 
   @include vp-767 {
-    padding: 95px 0 72px 0;
+    padding: 96px 0 72px 0;
   }
 
   &__wrap {
@@ -194,7 +194,7 @@
   &__content-text {
     width: 31.85%;
     margin-top: auto;
-    margin-bottom: 75px;
+    margin-bottom: 70px;
 
     @include vp-767 {
       width: 100%;

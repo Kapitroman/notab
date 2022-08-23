@@ -483,6 +483,10 @@ body {
 a {
   color: #ffffff;
   text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 img,
@@ -1579,14 +1583,14 @@ button,
 }
 
 .intro {
-  padding-bottom: 85px;
+  padding-bottom: 50px;
 }
 
 .intro__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 83px;
+  margin-bottom: 40px;
 }
 
 .intro__text-block {
@@ -1771,7 +1775,7 @@ button,
 }
 
 .our-mission {
-  padding: 123px 0 129px 0;
+  padding: 112px 0 129px 0;
 }
 
 .our-mission__wrap {
@@ -1787,6 +1791,7 @@ button,
   position: relative;
   width: 80.65%;
   margin-left: -28.06%;
+  margin-top: 0.65%;
   margin-bottom: auto;
 }
 
@@ -1940,7 +1945,7 @@ button,
 .id-scanner__content-text {
   width: 31.85%;
   margin-top: auto;
-  margin-bottom: 75px;
+  margin-bottom: 70px;
 }
 
 .id-scanner__text {
@@ -1948,7 +1953,7 @@ button,
 }
 
 .tool-integration {
-  padding: 98px 0 109px 0;
+  padding: 102px 0 109px 0;
 }
 
 .tool-integration__wrap {
@@ -1964,6 +1969,10 @@ button,
   flex-shrink: 0;
   width: 522px;
   padding-top: 89px;
+}
+
+.tool-integration__text {
+  max-width: 395px;
 }
 
 .tool-integration__drawing {
@@ -2042,7 +2051,7 @@ button,
 }
 
 .qr-code {
-  padding: 109px 0 0 0;
+  padding: 115px 0 0 0;
 }
 
 .qr-code__wrap {
@@ -2259,8 +2268,8 @@ button,
 
 .generate-code__image-block {
   position: relative;
-  margin-left: 10px;
-  margin-bottom: 6.45%;
+  margin-left: 17px;
+  margin-bottom: 6.4%;
 }
 
 .generate-code__image-block img {
@@ -2288,8 +2297,8 @@ button,
 
 .generate-code__scan-code {
   position: absolute;
-  top: 196px;
-  right: -327px;
+  top: 200px;
+  right: -337px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2438,7 +2447,7 @@ button,
 }
 
 .notab {
-  margin-top: -70px;
+  margin-top: -72px;
 }
 
 .notab__wrap {
@@ -2578,7 +2587,7 @@ button,
   z-index: 2;
   width: 100%;
   max-width: 818px;
-  margin-bottom: 91px;
+  margin-bottom: 66px;
 }
 
 .get-in-touch__form-fields {
@@ -2608,11 +2617,17 @@ button,
   border: 1px solid #ffffff;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 29px;
   color: #ffffff;
+}
+
+.get-in-touch__form-button button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .get-in-touch__download-apps {
@@ -2646,6 +2661,11 @@ button,
 } */
 
 @media (hover: hover), screen and (min-width: 0\0) {
+  a:hover,
+  a:focus {
+    opacity: 0.7;
+  }
+
   .btn:hover,
   .btn:focus {
     opacity: 0.8;
@@ -2659,6 +2679,11 @@ button,
   .custom-select__item:hover,
   .custom-select__item:focus {
     background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .get-in-touch__form-button button:hover,
+  .get-in-touch__form-button button:focus {
+    opacity: 0.7;
   }
 }
 
@@ -3001,7 +3026,7 @@ button,
   }
 
   .intro__wrap {
-    margin-bottom: 55px;
+    margin-bottom: 30px;
   }
 
   .intro__text-block {
@@ -3134,7 +3159,7 @@ button,
   }
 
   .id-scanner {
-    padding: 95px 0 72px 0;
+    padding: 96px 0 72px 0;
   }
 
   .id-scanner__fon-image {
@@ -3311,7 +3336,7 @@ button,
   }
 
   .qr-code {
-    padding: 17px 0 65px 0;
+    padding: 20px 0 65px 0;
   }
 
   .qr-code__fon-image-1 {
@@ -3572,7 +3597,7 @@ button,
   }
 
   .get-in-touch__form {
-    margin-bottom: 74px;
+    margin-bottom: 50px;
   }
 
   .get-in-touch__form-fields {
