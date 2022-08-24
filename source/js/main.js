@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-
+  useCookie();
   // Modules
   // ---------------------------------
 
@@ -22,7 +22,6 @@ window.addEventListener('DOMContentLoaded', () => {
     //initModals();
     //initCustomSelect();
     initFormValidate();
-    useCookie();
   });
 });
 

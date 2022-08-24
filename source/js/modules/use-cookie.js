@@ -9,6 +9,7 @@ const useCookie = () => {
 
   const clickOkButton = () => {
     modalPanel.style.display = 'none';
+    buttonCookie.removeEventListener('click', clickOkButton);
   }
 
   buttonCookie.addEventListener('click', clickOkButton);
