@@ -161,28 +161,28 @@
 
   &__big-highlight {
     position: absolute;
-    top: -475px;//-228
-    left: -350px;//-100
+    top: -475px;
+    left: -350px;
     z-index: 0;
 
-    width: 1163px;//663
-    height: 1284px;//783
+    width: 1163px;
+    height: 1284px;
 
     background-color: $color-magenta;
 
-    mask-image: url(../img/svg/intro-mask-1440.svg);
+    mask-image: url("../img/svg/intro-mask-1440.svg");
     filter: blur(250px);
     transform: rotate(-105.26deg);
 
     @include vp-767 {
 
-      top: -250px;//-83
-      left: -325px;//-145
+      top: -250px;
+      left: -325px;
 
-      width: 864px;//364
-      height: 781px;//430
+      width: 864px;
+      height: 781px;
 
-      mask-image: url(../img/svg/intro-mask-375.svg);
+      mask-image: url("../img/svg/intro-mask-375.svg");
       transform: rotate(-90.69deg);
     }
   }

@@ -662,38 +662,11 @@ button,
 }
 
 .container {
-  /*
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 0 40px;
-
-  @include vp-1439 {
-    padding: 0 32px;
-  }
-
-  @include vp-1023 {
-    padding: 0 24px;
-  }
-
-  @include vp-767 {
-    padding: 0 16px;
-  }
-  */
   width: 100%;
   max-width: 1440px;
   min-width: 375px;
   margin: 0 auto;
   padding: 0 100px;
-  /*
-  @include vp-1439 {
-    padding: 0 32px;
-  }
-
-  @include vp-1023 {
-    padding: 0 24px;
-  }
-  */
 }
 
 /*
@@ -1681,8 +1654,8 @@ button,
   width: 1163px;
   height: 1284px;
   background-color: #fa00ff;
-  -webkit-mask-image: url(../img/svg/intro-mask-1440.svg);
-  mask-image: url(../img/svg/intro-mask-1440.svg);
+  -webkit-mask-image: url("../img/svg/intro-mask-1440.svg");
+  mask-image: url("../img/svg/intro-mask-1440.svg");
   -webkit-filter: blur(250px);
   filter: blur(250px);
   -webkit-transform: rotate(-105.26deg);
@@ -2113,7 +2086,7 @@ button,
 
 .qr-code__fon-image-2 {
   position: relative;
-  width: 50.90%;
+  width: 50.9%;
   margin-left: auto;
   -webkit-transform: translate(11.17%, -0.81%);
   -ms-transform: translate(11.17%, -0.81%);
@@ -2786,7 +2759,7 @@ button,
   }
 
   .tool-integration__text-content {
-    padding-top: 0px;
+    padding-top: 0;
   }
 
   .tool-integration__drawing {
@@ -3144,8 +3117,8 @@ button,
     left: -325px;
     width: 864px;
     height: 781px;
-    -webkit-mask-image: url(../img/svg/intro-mask-375.svg);
-    mask-image: url(../img/svg/intro-mask-375.svg);
+    -webkit-mask-image: url("../img/svg/intro-mask-375.svg");
+    mask-image: url("../img/svg/intro-mask-375.svg");
     -webkit-transform: rotate(-90.69deg);
     -ms-transform: rotate(-90.69deg);
     transform: rotate(-90.69deg);
@@ -3386,7 +3359,7 @@ button,
   }
 
   .tool-integration__drawing div:nth-child(5) {
-    top: 0px;
+    top: 0;
     left: 363px;
     z-index: 1;
     width: 86px;

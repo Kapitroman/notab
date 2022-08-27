@@ -82,7 +82,7 @@
   &__fon-image-2 {
     position: relative;
 
-    width: 50.90%;
+    width: 50.9%;
     margin-left: auto;
 
     transform: translate(11.17%, -0.81%);
@@ -91,7 +91,6 @@
       width: 93.87%;
       margin-top: calc(596px - 100vw / 375);
 
-      //transform: translate(11.36%, 200.67%);
       transform: translate(11.36%, 0);
     }
 
@@ -185,7 +184,6 @@
     @include vp-767 {
       margin-bottom: 14.49%;
       padding-right: 0;
-
     }
   }
 

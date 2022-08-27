@@ -22,7 +22,7 @@
     padding-top: 89px;
 
     @include vp-1279 {
-      padding-top: 0px;
+      padding-top: 0;
     }
 
     @include vp-1023 {
@@ -47,12 +47,12 @@
     height: 522px;
 
     @include vp-1279 {
-       margin-left: -18%;
+      margin-left: -18%;
     }
 
     @include vp-1023 {
       margin-left: -250px;
-   }
+    }
 
     @include vp-767 {
       width: 543px;
@@ -148,7 +148,7 @@
       height: 193px;
 
       @include vp-767 {
-        top: 0px;
+        top: 0;
         left: 363px;
         z-index: 1;
 

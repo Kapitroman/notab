@@ -23,7 +23,6 @@
     @include vp-767 {
       padding: 21px 15px 22px 15px;
     }
-
   }
 
   &__text {
@@ -48,7 +47,7 @@
 
     width: 132px;
     min-height: 50px;
-    padding: 14px 20px 15px 20px ;
+    padding: 14px 20px 15px 20px;
     border: 1px solid $color-default-white;
     border-radius: 6px;
 
@@ -83,5 +82,3 @@
     display: block;
   }
 }
-
-

@@ -46,7 +46,7 @@
       padding-bottom: calc(100% / (1000 / 513));
 
       @include vp-767 {
-        display: none;;
+        display: none;
       }
     }
 
@@ -80,7 +80,6 @@
     z-index: 1;
 
     max-width: 358px;
-    //margin-bottom: 23px;
   }
 
   &__text {
@@ -105,5 +104,4 @@
       left: -24px;
     }
   }
-
 }
