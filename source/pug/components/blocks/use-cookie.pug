@@ -1,6 +1,6 @@
 mixin use-cookie()
-  section.use-cookie()
+  section.use-cookie(data-cookies data-cookies-duration="30")
     .use-cookie__wrap
       p.use-cookie__text
        | We use cookie to improve your experience on our site. By using our site you consent cookies.
-      button.use-cookie__button OK
+      button.use-cookie__button(type="button" data-cookies-consent) OK

@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 //import {initModals} from './modules/modals/init-modals';
 //import {initCustomSelect} from './modules/form/init-custom-select';
 import {initFormValidate} from './modules/form/init-form-validate';
-import {useCookie} from './modules/use-cookie';
+import {cookieConsentChecker} from './modules/cookie-consent-checker';
 
 // ---------------------------------
 
@@ -12,7 +12,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  useCookie();
   // Modules
   // ---------------------------------
 
@@ -21,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     //initModals();
     //initCustomSelect();
+    cookieConsentChecker();
     initFormValidate();
   });
 });

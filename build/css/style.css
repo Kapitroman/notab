@@ -2718,6 +2718,10 @@ button,
   pointer-events: none;
 }
 
+.use-cookie.is-active {
+  display: block;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
